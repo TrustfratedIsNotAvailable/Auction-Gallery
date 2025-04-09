@@ -1,75 +1,83 @@
 [
-    {
-      "id": 1,
-      "title": "Vintage Watch",
-      "description": "A classic vintage watch in excellent condition, with leather straps.",
-      "currentBidPrice": 150.00,
-      "timeLeft": "2 days left",
-      "bidsCount": 12,
-      "image": "https://example.com/images/vintage-watch.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Antique Vase",
-      "description": "A beautifully hand-painted antique vase from the 19th century.",
-      "currentBidPrice": 250.00,
-      "timeLeft": "1 day 12 hours left",
-      "bidsCount": 25,
-      "image": "https://example.com/images/antique-vase.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Leather Sofa",
-      "description": "Luxurious brown leather sofa, great condition, perfect for any living room.",
-      "currentBidPrice": 500.00,
-      "timeLeft": "6 hours left",
-      "bidsCount": 8,
-      "image": "https://example.com/images/leather-sofa.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Modern Art Painting",
-      "description": "A stunning modern art painting, vibrant colors and bold brush strokes.",
-      "currentBidPrice": 350.00,
-      "timeLeft": "3 days left",
-      "bidsCount": 18,
-      "image": "https://example.com/images/modern-art.jpg"
-    },
-    {
-      "id": 5,
-      "title": "Bicycle",
-      "description": "Mountain bicycle in near-new condition, perfect for outdoor enthusiasts.",
-      "currentBidPrice": 200.00,
-      "timeLeft": "12 hours left",
-      "bidsCount": 15,
-      "image": "https://example.com/images/bicycle.jpg"
-    },
-    {
-      "id": 6,
-      "title": "Smartphone",
-      "description": "Latest model smartphone, unlocked, with original packaging and accessories.",
-      "currentBidPrice": 750.00,
-      "timeLeft": "4 hours left",
-      "bidsCount": 30,
-      "image": "https://example.com/images/smartphone.jpg"
-    },
-    {
-      "id": 7,
-      "title": "Luxury Handbag",
-      "description": "An elegant leather handbag from a renowned designer, in pristine condition.",
-      "currentBidPrice": 1200.00,
-      "timeLeft": "5 days left",
-      "bidsCount": 40,
-      "image": "https://example.com/images/luxury-handbag.jpg"
-    },
-    {
-      "id": 8,
-      "title": "Gaming Laptop",
-      "description": "High-performance gaming laptop with the latest specs and graphics card.",
-      "currentBidPrice": 1800.00,
-      "timeLeft": "2 days left",
-      "bidsCount": 22,
-      "image": "https://example.com/images/gaming-laptop.jpg"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Vintage Leica M3 Camera",
+    "description": "A classic 35mm film camera known for its precision and build quality.",
+    "currentBidPrice": 150.00,
+    "timeLeft": "2 days left",
+    "bidsCount": 12,
+    "image": "https://raw.githubusercontent.com/ProgrammingHero1/B11A7-Simple-React-Assignment/refs/heads/main/assets/Bid1-min.png"
+  },
+  {
+    "id": 2,
+    "title": "1956 Gibson ES-335 Electric Guitar",
+    "description": "A vintage semi-hollow electric guitar with a rich, warm tone.",
+    "currentBidPrice": 250.00,
+    "timeLeft": "1 day 12 hours left",
+    "bidsCount": 25,
+    "image": "https://github.com/ProgrammingHero1/B11A7-Simple-React-Assignment/blob/main/assets/Bid2-min.png?raw=true"
+  },
+  {
+    "id": 3,
+    "title": "Original Apple Macintosh 128K (1984)",
+    "description": "The first Macintosh personal computer released by Apple.",
+    "currentBidPrice": 500.00,
+    "timeLeft": "6 hours left",
+    "bidsCount": 8,
+    "image": "https://github.com/ProgrammingHero1/B11A7-Simple-React-Assignment/blob/main/assets/Bid3-min.png?raw=true"
+  },
+  {
+    "id": 4,
+    "title": "Rolex Submariner 16610",
+    "description": "A durable and timeless luxury diving watch by Rolex.",
+    "currentBidPrice": 350.00,
+    "timeLeft": "3 days left",
+    "bidsCount": 18,
+    "image": "https://github.com/ProgrammingHero1/B11A7-Simple-React-Assignment/blob/main/assets/Bid4-min.png?raw=true"
+  },
+  {
+    "id": 5,
+    "title": "First Edition: The Great Gatsby by F. Scott Fitzgerald",
+    "description": "A rare first edition copy of the literary classic.",
+    "currentBidPrice": 200.00,
+    "timeLeft": "12 hours left",
+    "bidsCount": 15,
+    "image": "https://github.com/ProgrammingHero1/B11A7-Simple-React-Assignment/blob/main/assets/Bid5-min.png?raw=true"
+  },
+  {
+    "id": 6,
+    "title": "Mid-Century Modern Eames Lounge Chair",
+    "description": "Iconic furniture piece with sleek design and comfort.",
+    "currentBidPrice": 750.00,
+    "timeLeft": "4 hours left",
+    "bidsCount": 30,
+    "image": "https://github.com/ProgrammingHero1/B11A7-Simple-React-Assignment/blob/main/assets/Bid6-min.png?raw=true"
+  },
+  {
+    "id": 7,
+    "title": "Banksy Original Screen Print",
+    "description": "An original artwork by the famous street artist Banksy.",
+    "currentBidPrice": 1200.00,
+    "timeLeft": "5 days left",
+    "bidsCount": 40,
+    "image": "https://github.com/ProgrammingHero1/B11A7-Simple-React-Assignment/blob/main/assets/Bid7-min.png?raw=true"
+  },
+  {
+    "id": 8,
+    "title": "NASA Apollo 11 Flight Manual",
+    "description": "Original flight manual from the first moon landing mission.",
+    "currentBidPrice": 1800.00,
+    "timeLeft": "2 days left",
+    "bidsCount": 22,
+    "image": "https://github.com/ProgrammingHero1/B11A7-Simple-React-Assignment/blob/main/assets/Bid7-min.png?raw=true"
+  },
+  {
+    "id": 9,
+    "title": "Nintendo Game Boy (1989)",
+    "description": "Classic handheld console that revolutionized gaming on the go.",
+    "currentBidPrice": 2850,
+    "timeLeft": "2 Days left",
+    "bidsCount": 14,
+    "image": "https://github.com/ProgrammingHero1/B11A7-Simple-React-Assignment/blob/main/assets/Bid7-min.png?raw=true"
+  }
+]
