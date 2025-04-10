@@ -1,6 +1,7 @@
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import BidItems from './Components/BidItems/BidItems'
+import Footer from './Components/Footer/Footer'
 import Navbar from './Components/Navbar/Navbar'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         </div>
         <div className="right-container w-[30%]"></div>
       </div>
+      <Footer></Footer>
     </>
   )
 }

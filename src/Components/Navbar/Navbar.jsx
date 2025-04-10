@@ -13,10 +13,10 @@ const Navbar = () => {
 
                  {/* Centered items list */}
                  <div className="flex flex-1 justify-center space-x-4">
-                    <a className="btn btn-ghost">Home</a>
-                    <a className="btn btn-ghost">Auctions</a>
-                    <a className="btn btn-ghost">Categories</a>
-                    <a className="btn btn-ghost">How to works</a>
+                 <a className="btn btn-ghost">Home</a>
+                        <a className="btn btn-ghost">Auctions</a>
+                        <a className="btn btn-ghost">Categories</a>
+                        <a className="btn btn-ghost">How to works</a>
                 </div>
                 <div className="flex-none  flex items-center space-x-4">
                     <div className="dropdown dropdown-end">

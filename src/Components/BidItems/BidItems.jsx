@@ -12,26 +12,29 @@ const BidItems = () => {
     
     return (
         <div>
-            <div className="overflow-x-auto">
-                <table className="table table-zebra">
-                    {/* head */}
-                    <thead>
-                    <tr>
-                        <th>Items</th>
-                        <th>Current Bid</th>
-                        <th>Time Left</th>
-                        <th>Bid Now</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            bidItems.map(bidItem => (
-                                <BidItem key={bidItem.id} bidItem={bidItem} />
-                            ))
-                        }
-                    </tbody>
-                </table>
+            <div className='py-25'>
+                <div className="overflow-x-auto">
+                    <table className="table table-zebra">
+                        {/* head */}
+                        <thead>
+                        <tr>
+                            <th>Items</th>
+                            <th>Current Bid</th>
+                            <th>Time Left</th>
+                            <th>Bid Now</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                bidItems.map(bidItem => (
+                                    <BidItem key={bidItem.id} bidItem={bidItem} />
+                                ))
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
+            
         </div>
     );
 };
