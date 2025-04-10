@@ -2,8 +2,7 @@ import React from 'react';
 import { FaDeleteLeft } from "react-icons/fa6";
 import './FavouriteItem.css';
 
-const FavouriteItem = ({favItem}) => {
-    console.log(favItem);
+const FavouriteItem = ({favItem,handleDelete}) => {
     return (
         <div>
             <div className='favourite'>
@@ -12,7 +11,7 @@ const FavouriteItem = ({favItem}) => {
                     <p>{favItem.title}</p>
                     <p>{favItem.currentBidPrice} Bids:{favItem.bidsCount}</p>
                 </div>
-                <FaDeleteLeft size={24}/>
+                <button onClick={()=>handleDelete(favItem)}><FaDeleteLeft size={24}/></button> 
             </div>
         </div>
         

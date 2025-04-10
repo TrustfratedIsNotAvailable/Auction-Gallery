@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import BidItem from '../BidItem/BidItem';
 import './BidItems.css';
 
-const BidItems = ({handleFavourite}) => {
+const BidItems = ({handleFavourite, favouriteItem}) => {
     const [bidItems,setBidItems] = useState([]);
 
     useEffect(()=>{
@@ -17,7 +17,7 @@ const BidItems = ({handleFavourite}) => {
             <div className="overflow-x-auto">
                 <table className="table bg-white">
                     {/* head */}
-                    <thead>
+                    <thead style={{ backgroundColor: '#F4F9FD' }}>
                     <tr>
                         <th>Items</th>
                         <th>Current Bid</th>
@@ -27,13 +27,17 @@ const BidItems = ({handleFavourite}) => {
                     </thead>
                     <tbody>
                         {
-                            bidItems.map(bidItem => (
-                                <BidItem 
-                                    key={bidItem.id} 
-                                    bidItem={bidItem}
-                                    handleFavourite={handleFavourite} 
-                                />
-                            ))
+                            bidItems.map(bidItem => {
+                                const isFavourite = favouriteItem.some(fav => fav.id === bidItem.id);
+                                return (
+                                    <BidItem 
+                                        key={bidItem.id} 
+                                        bidItem={bidItem}
+                                        handleFavourite={handleFavourite}
+                                        isFavourite={isFavourite} 
+                                    />
+                                )
+                            })
                         }
                     </tbody>
                 </table>
