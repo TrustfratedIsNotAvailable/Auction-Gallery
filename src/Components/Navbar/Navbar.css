@@ -10,3 +10,16 @@
     color:white;
     transform: scale(1.05);
   }
+
+  .bell-container .bell-badge{
+    border:none;
+    background-color: transparent;
+  }
+
+  .bell-container:hover .bell-badge{
+    color:white;
+  }
+
+  .bell-container:hover svg {
+    color: white;
+  }

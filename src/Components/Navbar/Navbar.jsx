@@ -23,9 +23,9 @@ const Navbar = () => {
                     {/* Notifications Dropdown */}
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle bg-base-300">
-                            <div className="indicator">
+                            <div className="indicator bell-container">
                                 <FaRegBell className="h-5 w-5 text-current" />
-                                <span className="badge badge-sm indicator-item">3</span>
+                                <span className="badge badge-sm indicator-item bell-badge">3</span>
                             </div>
                         </div>
                         <ul className="dropdown-content bg-white p-4 rounded-lg shadow-lg w-64 text-sm">
