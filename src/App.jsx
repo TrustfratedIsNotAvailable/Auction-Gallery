@@ -1,6 +1,6 @@
 import './App.css'
+import AuctionsContainer from './Components/AuctionsContainer/AuctionContainer'
 import Banner from './Components/Banner/Banner'
-import BidItems from './Components/BidItems/BidItems'
 import Footer from './Components/Footer/Footer'
 import Navbar from './Components/Navbar/Navbar'
 
@@ -10,12 +10,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <Banner></Banner>
-      <div className='w-11/12 mx-auto'>
-        <div className="left-container w-[70%]">
-            <BidItems></BidItems>
-        </div>
-        <div className="right-container w-[30%]"></div>
-      </div>
+      <AuctionsContainer></AuctionsContainer>
       <Footer></Footer>
     </>
   )

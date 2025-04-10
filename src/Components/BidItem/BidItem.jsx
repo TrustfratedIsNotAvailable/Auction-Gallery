@@ -1,9 +1,7 @@
 import React from 'react';
 import { FaRegHeart } from "react-icons/fa6";
 
-const BidItem = ({bidItem}) => {
-    
-    console.log(bidItem.image);
+const BidItem = ({bidItem,handleFavourite}) => {
     return (
         <tr>
             <td className='flex items-center gap-2'>
@@ -15,7 +13,9 @@ const BidItem = ({bidItem}) => {
             </td>
             <td>${bidItem.currentBidPrice}</td>
             <td>{bidItem.timeLeft}</td>
-            <td><FaRegHeart /></td>
+            <td>
+                <button onClick={()=>handleFavourite(bidItem)}><FaRegHeart /></button>
+            </td>
             
         </tr>
     );

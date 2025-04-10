@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import BidItem from '../BidItem/BidItem';
+import './BidItems.css';
 
-const BidItems = () => {
+const BidItems = ({handleFavourite}) => {
     const [bidItems,setBidItems] = useState([]);
 
     useEffect(()=>{
@@ -11,30 +12,32 @@ const BidItems = () => {
     },[]);
     
     return (
+        
         <div>
-            <div className='py-25'>
-                <div className="overflow-x-auto">
-                    <table className="table table-zebra">
-                        {/* head */}
-                        <thead>
-                        <tr>
-                            <th>Items</th>
-                            <th>Current Bid</th>
-                            <th>Time Left</th>
-                            <th>Bid Now</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            {
-                                bidItems.map(bidItem => (
-                                    <BidItem key={bidItem.id} bidItem={bidItem} />
-                                ))
-                            }
-                        </tbody>
-                    </table>
-                </div>
+            <div className="overflow-x-auto">
+                <table className="table bg-white">
+                    {/* head */}
+                    <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Current Bid</th>
+                        <th>Time Left</th>
+                        <th>Bid Now</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            bidItems.map(bidItem => (
+                                <BidItem 
+                                    key={bidItem.id} 
+                                    bidItem={bidItem}
+                                    handleFavourite={handleFavourite} 
+                                />
+                            ))
+                        }
+                    </tbody>
+                </table>
             </div>
-            
         </div>
     );
 };
