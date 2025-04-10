@@ -1,8 +1,13 @@
 import React from 'react';
 import { FaDeleteLeft } from "react-icons/fa6";
+import { toast } from 'react-toastify';
 import './FavouriteItem.css';
 
 const FavouriteItem = ({favItem,handleDelete}) => {
+    const handleClick = () =>{
+        handleDelete(favItem);
+        toast.warning(`Removed ${favItem.title} from favourites`);
+    }
     return (
         <div>
             <div className='favourite'>
@@ -15,7 +20,7 @@ const FavouriteItem = ({favItem,handleDelete}) => {
                     </div> 
 
                 </div>
-                <button onClick={()=>handleDelete(favItem)}><FaDeleteLeft size={24}/></button> 
+                <button onClick={handleClick}><FaDeleteLeft size={24}/></button> 
             </div>
         </div>
         

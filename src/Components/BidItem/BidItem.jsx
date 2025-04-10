@@ -1,8 +1,15 @@
 import React from 'react';
 import { FaRegHeart, FaHeart } from "react-icons/fa6";
+import { toast } from 'react-toastify';
 import './BidItem.css';
 
 const BidItem = ({bidItem,handleFavourite, isFavourite }) => {
+    const handleClick =()=>{
+        if(!isFavourite){
+            handleFavourite(bidItem);
+            toast.success(`${bidItem.title} added to favourites! 💖`);
+        }
+    }
     return (
         <tr>
             <td className='flex items-center gap-2'>
@@ -16,7 +23,7 @@ const BidItem = ({bidItem,handleFavourite, isFavourite }) => {
             <td>{bidItem.timeLeft}</td>
             <td>
                 <button 
-                    onClick={() => handleFavourite(bidItem)} 
+                    onClick={handleClick} 
                     disabled={isFavourite}
                     style={{
                         cursor: isFavourite ? 'not-allowed' : 'pointer',
@@ -26,6 +33,7 @@ const BidItem = ({bidItem,handleFavourite, isFavourite }) => {
                         transition: 'transform 0.2s ease, color 0.2s ease'
                     }}
                     className='heart-button'
+
                 >
                     {isFavourite ? <FaHeart /> : <FaRegHeart />}
             </button>
