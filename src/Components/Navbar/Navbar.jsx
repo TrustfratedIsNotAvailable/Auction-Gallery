@@ -5,10 +5,10 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="navbar bg-base-100 shadow-sm px-16">
                 <div className="flex-0 space-x-0 text-xl">
-                    <span className='text-blue-800'>Auction</span>
-                    <span className='text-orange-400 font-bold'>Gallery</span>
+                    <span className='text-[#003EA4]'>Auction</span>
+                    <span className='text-[#FFD337] font-bold'>Gallery</span>
                 </div>
 
                  {/* Centered items list */}
