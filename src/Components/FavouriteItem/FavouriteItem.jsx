@@ -8,8 +8,12 @@ const FavouriteItem = ({favItem,handleDelete}) => {
             <div className='favourite'>
                 <img src={favItem.image} alt="" />
                 <div>
-                    <p>{favItem.title}</p>
-                    <p>{favItem.currentBidPrice} Bids:{favItem.bidsCount}</p>
+                    <p className='mb-2'>{favItem.title}</p>
+                    <div className='flex gap-x-5'>
+                        <p>${favItem.currentBidPrice}</p>
+                        <p>Bids:{favItem.bidsCount}</p>
+                    </div> 
+
                 </div>
                 <button onClick={()=>handleDelete(favItem)}><FaDeleteLeft size={24}/></button> 
             </div>

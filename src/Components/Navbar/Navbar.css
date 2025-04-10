@@ -1,0 +1,12 @@
+.navbar .btn {
+    cursor: pointer;
+    background-color: transparent;
+    border:none;
+    border-radius: 16px;
+  }
+  
+  .navbar .btn:hover {
+    background-color: #FFD337;
+    color:white;
+    transform: scale(1.05);
+  }

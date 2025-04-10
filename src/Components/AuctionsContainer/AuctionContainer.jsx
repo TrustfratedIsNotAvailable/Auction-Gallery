@@ -16,10 +16,10 @@ const AuctionsContainer = () => {
         setFavouriteItem((prev) => prev.filter(item => item.id !== favItem.id));
         setTotalAmount(totalAmount - favItem.currentBidPrice);
     };
-
+    // bg-[#F9FBFD] 
     return (
         <div>
-            <div className='bg-[#F9FBFD] py-25 px-16'>
+            <div className='bg-[#F1F5F9]  py-25 px-16'>
                 <p className='font-medium text-[24px] text-[#0E2954] mb-2'>Active Auctions</p>
                 <p className='text-[18px] mb-7'>Discover and bid on extraordinary items</p>
 

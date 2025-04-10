@@ -20,7 +20,7 @@
     height: 60px;
     object-fit: cover;
     border-radius: 8px;
-    margin-right: 16px;
+    margin-right: 8px;
 }
 
 .favourite > div {
@@ -29,8 +29,7 @@
 }
 
 .favourite p {
-    margin: 2px 0;
-    color: #374151; /* gray-700 */
+    color: #0E2954;
 }
 
 .favourite svg {

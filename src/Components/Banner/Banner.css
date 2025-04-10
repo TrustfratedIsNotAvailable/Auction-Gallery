@@ -4,4 +4,13 @@
     background-position: center;
     height: 100vh;
   }
+
+  .banner .btn {
+    cursor: pointer;
+  }
   
+  .banner .btn:hover {
+    background-color: #FFD337;
+    color:white;
+    transform: scale(1.05);
+  }
