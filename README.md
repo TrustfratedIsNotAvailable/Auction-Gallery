@@ -15,7 +15,6 @@ A responsive auction platform built with React featuring live bidding, favorites
 - Add/remove favorite auction items
 - Animated UI interactions with Framer Motion
 - Toast notifications for user feedback
-- Categories and "How It Works" sections
 
 ---
 
@@ -47,16 +46,18 @@ A responsive auction platform built with React featuring live bidding, favorites
 
 2. Install dependencies:
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
 3. Start the development server:
 
-```bash
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
 
-4. Open your browser and visit: `http://localhost:5173`
+4. Open your browser and visit: 
 
-```
+    ```bash
+    `http://localhost:5173`
+    ```
