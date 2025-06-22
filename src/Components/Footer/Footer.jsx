@@ -1,30 +1,63 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
-    return (
-        <div>
-            <div className='flex flex-col items-center text-center py-20'>
-                <div className="flex-0 space-x-0 text-[24px] mb-2">
-                        <span className='text-[#003EA4]'>Auction</span>
-                        <span className='text-[#FFD337] font-bold'>Gallery</span>
-                </div>
-
-                <div className='flex space-x-1.5 text-[20px] mb-4'>
-                    <a>Bid.</a>
-                    <a>Win.</a>
-                    <a>Own.</a>
-                </div> 
-                
-                <div className="flex flex-1 space-x-4 mb-6">
-                        <a className="text-[16px]">Home</a>
-                        <a className="text-[16px]">Auctions</a>
-                        <a className="text-[16px]">Categories</a>
-                        <a className="text-[16px]">How to works</a>
-                </div>
-                <p>© 2025 AuctionHub. All rights reserved.</p> 
-            </div>
+  return (
+    <footer className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-16 flex flex-col items-center text-center space-y-8">
+        {/* Branding */}
+        <div className="text-4xl font-extrabold tracking-tight mb-2">
+          <span className="text-yellow-400">Auction</span>
+          <span className="text-white">Gallery</span>
         </div>
-    );
+
+        {/* Tagline */}
+        <div className="flex space-x-4 text-lg font-semibold italic text-yellow-300">
+          <span className="hover:text-yellow-400 cursor-default">Bid.</span>
+          <span className="hover:text-yellow-400 cursor-default">Win.</span>
+          <span className="hover:text-yellow-400 cursor-default">Own.</span>
+        </div>
+
+        {/* Navigation */}
+        <nav
+          aria-label="Footer navigation"
+          className="flex space-x-10 text-white text-lg"
+        >
+          <a
+            href="#"
+            className="hover:text-yellow-400 transition-colors duration-300"
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            className="hover:text-yellow-400 transition-colors duration-300"
+          >
+            Auctions
+          </a>
+          <a
+            href="#"
+            className="hover:text-yellow-400 transition-colors duration-300"
+          >
+            Categories
+          </a>
+          <a
+            href="#"
+            className="hover:text-yellow-400 transition-colors duration-300"
+          >
+            How it works
+          </a>
+        </nav>
+
+        {/* Divider */}
+        <hr className="w-full max-w-md border-yellow-400 border-opacity-30" />
+
+        {/* Copyright */}
+        <p className="text-yellow-300 text-sm">
+          © 2025 AuctionHub. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

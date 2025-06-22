@@ -1,4 +1,4 @@
-.banner {
+/* .banner {
     background-image: url('/images/Banner-min.jpg');
     background-size: cover;
     background-position: center;
@@ -13,4 +13,37 @@
     background-color: #FFD337;
     color:white;
     transform: scale(1.05);
-  }
+  } */
+
+  .banner {
+    background-image: url('/images/Banner-min.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Optional: add a dark overlay for better text visibility */
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background-color: rgba(0, 0, 0, 0.4);
+     subtle dark overlay */
+    z-index: 0;
+}
+
+.banner > div {
+    position: relative;
+    z-index: 1;
+}
+
+.banner .btn {
+    cursor: pointer;
+}
+
+.banner .btn:hover {
+    background-color: #FFD337;
+    color: white;
+    transform: scale(1.05);
+}
